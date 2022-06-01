@@ -6,7 +6,7 @@ const RecipeDetail = () => {
     const { id } = useParams();
     const [recipe, setRecipe] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/recipe/${id}`;
+        const url = `https://infinite-stream-73396.herokuapp.com/recipe/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setRecipe(data))

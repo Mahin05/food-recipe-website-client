@@ -5,7 +5,7 @@ import './Recipes.css'
 const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/recipes')
+        fetch('https://infinite-stream-73396.herokuapp.com/recipes')
             .then(res => res.json())
             .then(data => setRecipes(data))
     }, [])
