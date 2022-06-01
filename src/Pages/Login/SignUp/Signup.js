@@ -25,7 +25,7 @@ const SignUp = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate('/');
     }
 
     const onSubmit = async data => {
