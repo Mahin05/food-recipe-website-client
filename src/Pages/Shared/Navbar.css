@@ -1,0 +1,15 @@
+.food-style{
+    color: tomato;
+    font-size: 200%;
+    font-weight: 800;
+}
+.list-stye{
+    font-weight: 600;
+}
+@media only screen and (max-width:576px){
+    .food-style{
+        color: tomato;
+        font-size: 120%;
+        font-weight: 800;
+    }
+}
