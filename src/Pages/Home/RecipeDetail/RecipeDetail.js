@@ -18,7 +18,7 @@ const RecipeDetail = () => {
                     'width': '30%', 'height': '20%',
                 }}
                     src={recipe.image}
-                    alt="Shoes"
+                    alt="food"
                     class="rounded-xl" />
             </figure>
             <div class="card-body">
