@@ -1,0 +1,13 @@
+.mobile-title{
+    color:tomato;
+}
+@media only screen and (max-width:576px){
+    .mobile-banner{
+        width: 120%;
+    }
+    .mobile-title{
+        font-size: 150%;
+        margin-top: 10%;
+        color:tomato;
+    }
+}
