@@ -10,10 +10,11 @@ const Navbar = () => {
         signOut(auth);
     };
     const menuItems = <>
-        <li className='list-stye'><Link to="/">HOME</Link></li>
-        <li className='list-stye'><Link to="">RECIPE</Link></li>
-    <li>{user ? <button onClick={logout} className="btn btn-ghost">Sign Out</button> :
-        <Link className='list-stye' to="/login">LOGIN</Link>}</li>
+        <li className='list-stye'><Link to="/home">HOME</Link></li>
+        <li className='list-stye'><Link to="/home">RECIPE</Link></li>
+        <li>{user ? <button onClick={logout} className="btn btn-ghost">Sign Out</button> :
+            <Link className='list-stye' to="/">LOGIN</Link>}</li>
+        <li className='list-stye'>{user && <button className="btn btn-ghost">{user.email}</button>}</li>
     </>
     return (
         <div className="navbar bg-base-100">

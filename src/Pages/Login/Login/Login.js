@@ -29,7 +29,7 @@ const Login = () => {
     let signInError;
     if (user) {
         // console.log(user);
-        navigate('/');
+        navigate('/home');
     }
 
     if (error) {
